@@ -1,0 +1,213 @@
+.heading-section {
+  .subheading {
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 0;
+    color: $color-accent-1;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: -60px;
+      content: "";
+      transform: translateY(-50%);
+      width: 50px;
+      height: 1px;
+      margin-top: -1px;
+      background: $color-accent-1;
+    }
+    &:before {
+      position: absolute;
+      top: 50%;
+      right: -60px;
+      content: "";
+      transform: translateY(-50%);
+      width: 50px;
+      height: 1px;
+      margin-top: -1px;
+      background: $color-accent-1;
+    }
+  }
+  h3 {
+		font-size: 30px;
+		text-transform: uppercase;
+		font-family: dosis;
+    font-weight: 600;
+    @include media-breakpoint-down(sm) {
+      font-size: 28px;
+    }
+  }
+  // &.heading-section-white{
+  // 	.subheading{
+  // 		color: rgba(255,255,255,.9);
+  // 		&:after, &:before{
+  // 			background: $color-white;
+  // 		}
+  // 	}
+  // 	h2{
+  // 		font-size: 40px;
+  // 		color: $color-white;
+  // 	}
+  // 	p{
+  // 		color: rgba(255,255,255,.9);
+  // 	}
+  // }
+}
+
+//COVER BG
+// .img,
+// .img-2,
+// .blog-img,
+// .user-img {
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center center;
+// }
+
+//TESTIMONY
+.testimony-section {
+  position: relative;
+ // z-index: -1;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    height: 350px;
+    background: $color_accent_1_a;
+    z-index: -1;
+  }
+  position: relative;
+  .owl-carousel {
+    margin: 0;
+  }
+  .owl-carousel .owl-stage-outer {
+    padding: 1.5em 0 2em 0;
+    position: relative;
+  }
+  .owl-nav {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      transform: translateY(-50%);
+      margin-top: -10px;
+      outline: none !important;
+      @include transition(0.3s);
+      span {
+        &:before {
+          font-size: 30px;
+          color: rgba(0, 0, 0, 0.5);
+          @include transition(0.3s);
+        }
+      }
+      &:hover,
+      &:focus {
+        span {
+          &:before {
+            color: $color-white;
+          }
+        }
+      }
+      opacity: 0;
+    }
+    .owl-prev {
+      left: 50%;
+      margin-left: -80px;
+    }
+    .owl-next {
+      right: 50%;
+      margin-right: -80px;
+    }
+  }
+  &:hover {
+    .owl-nav {
+      .owl-prev,
+      .owl-next {
+        opacity: 1;
+      }
+      .owl-prev {
+        left: 50%;
+        margin-left: -80px;
+      }
+      .owl-next {
+        right: 50%;
+        margin-right: -80px;
+      }
+    }
+  }
+  .owl-dots {
+    text-align: center;
+    .owl-dot {
+      width: 10px;
+      height: 10px;
+      margin: 5px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.1);
+      &.active {
+        background: $color-accent-1;
+      }
+    }
+  }
+}
+.testimony-wrap {
+  display: block;
+  position: relative;
+  background: rgba(255, 255, 255, 1);
+  padding: 0 20px;
+  margin: 10px;
+
+  // -webkit-box-shadow: 0px 0px 33px rgba(0,0,0,0.24);
+  // -moz-box-shadow: 0px 0px 33px -41px rgba(0,0,0,0.24);
+  box-shadow: 0px 0px 30px -9px rgba(0, 0, 0, 0.24);
+  
+  .text{
+    p{
+      font-size: 15px !important;
+    }
+  }
+  
+  .testimony-icon {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    background: $color-accent-1;
+    span {
+      color: $color-white;
+      font-size: 12px;
+    }
+  }
+  .user-img {
+    width: 50px !important;
+    height: 50px !important;
+    position: relative;
+    @include border-radius(50%);
+  }
+  .name {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 0;
+    // color: $black;
+  }
+  .position {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.442);
+  }
+}
+
+.about-image {
+  @include media-breakpoint-down(sm) {
+    height: 300px;
+    margin-bottom: 30px;
+  }
+}

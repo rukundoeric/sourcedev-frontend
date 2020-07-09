@@ -1,0 +1,55 @@
+@import "./abstracts/colors";
+@import "./abstracts/screens";
+@import "./abstracts/breakpoints";
+@import "./abstracts/mixins";
+@import "./abstracts/keyframes";
+@import "./abstracts/extends";
+@import "./abstracts/animations";
+@import "./commons/icons";
+
+// Background imgs
+$banner-bg-1: url(../imgs/bg/banner-bg-1_80.jpg);
+$banner-bg-2: url(../imgs/bg/banner-bg-2.jpg);
+$banner-bg-3: url(../imgs/bg/banner-bg-3.jpg);
+
+$banner-bg-4: url(../imgs/bg/banner-bg-4.jpg);
+$banner-bg-5: url(../imgs/bg/banner-bg-4.jpg);
+// $banner-bg-5: url(../imgs/bg/bg_1.jpg);
+$banner-bg-6: url(../imgs/bg/banner-bg-6.jpg);
+
+
+$banner-bg-gr: url(../imgs/bg/banner-bg-gr.png);
+$banner-bg-1-svg: url(../imgs/bg/banner-bg-1-svg.svg);
+$h-btn-bg-1: url(../imgs/bg/h-btn-bg-1.svg);
+$h-btn-bg-2: url(../imgs/bg/h-btn-bg-2.svg);
+$s-intro-web-mob-bg: url(../imgs/ser-6.jpg);
+$s-intro-api-bg: url(../imgs/ser-3.jpg);
+$about-overlay: url(../imgs/bg/about_overlay.png);
+
+
+// Icons
+$d-icon-menu: url(../imgs/icons/menu-open-d.svg);
+$d-icon-close: url(../imgs/icons/menu-close-d.svg);
+
+// Fonts
+$valken: url(../fonts/Valken__.ttf);
+$dosis: url(../fonts/DosisSemiBold.ttf);
+$helvetica: url(../fonts/Helvetica.ttf);
+$s-s-regular: url(../fonts/SourceSansPro-Regular.ttf);
+$roboto-medium: url(../fonts/Roboto-Medium.ttf);
+
+$flaticon-src-1: url(../fonts/Flaticon.eot);
+$flaticon-src-2: url(../fonts/Flaticon.eot?#iefix) format("embedded-opentype"),
+  url(../fonts/Flaticon.woff2) format("woff2"),
+  url(../fonts/Flaticon.woff) format("woff"),
+  url(../fonts/Flaticon.ttf) format("truetype"),
+  url(../fonts/Flaticon.svg#Flaticon) format("svg");
+$flaticon-src-3: url(../fonts/Flaticon.svg#Flaticon) format("svg");
+//Fonts Names
+$primary-font: Lato, sans-serif;
+$secondary-font: 'Montserrat',Arial, sans-serif;
+
+
+// Shadows
+
+$main_shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);

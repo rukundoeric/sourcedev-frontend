@@ -1,0 +1,116 @@
+@mixin show-borders($color, $size) {
+  border: $size solid $color;
+}
+@mixin flex-center {
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin hide-on($screens) {
+  @each $var in $screens {
+    @media #{$var} {
+      display: none;
+    }
+  }
+}
+@mixin show-on($screens) {
+  @each $var in $screens {
+    @media #{$var} {
+      display: block;
+    }
+  }
+}
+@mixin transition($transition) {
+  -moz-transition: all $transition ease;
+  -o-transition: all $transition ease;
+  -webkit-transition: all $transition ease;
+  -ms-transition: all $transition ease;
+  transition: all $transition ease;
+}
+@mixin transition($args: all 0.6s ease 0s) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin ease-transition($object, $time, $type) {
+  -o-transition: $object $time $type;
+  -webkit-transition: $object $time $type;
+  transition: $object $time $type;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin custom-animate(
+  $name,
+  $duration,
+  $timing-function,
+  $delay,
+  $iteration-count,
+  $direction
+) {
+  backface-visibility: hidden;
+  animation: $name $duration $timing-function $delay $iteration-count $direction;
+  -o-animation: $name $duration $timing-function $delay $iteration-count
+    $direction;
+  -webkit-animation: $name $duration $timing-function $delay $iteration-count
+    $direction;
+  -moz-transition: $name $duration $timing-function $delay $iteration-count
+    $direction;
+  transition: all 8s ease 4s;
+  -moz-transition: all 8s ease 4s;
+  -webkit-transition: all 8s ease 4s;
+  -o-transition: all 8s ease 4s;
+  user-select: none;
+}
+@mixin custom-animate1(
+  $name,
+  $duration,
+  $timing-function,
+  $delay,
+  $iteration-count,
+  $direction
+) {
+  backface-visibility: hidden;
+  animation: $name $duration $timing-function $delay $iteration-count $direction;
+  -o-animation: $name $duration $timing-function $delay $iteration-count
+    $direction;
+  -webkit-animation: $name $duration $timing-function $delay $iteration-count
+    $direction;
+  -moz-transition: $name $duration $timing-function $delay $iteration-count
+    $direction;
+  transition: all 8s ease 4s;
+  -moz-transition: all 8s ease 4s;
+  -webkit-transition: all 8s ease 4s;
+  -o-transition: all 8s ease 4s;
+  user-select: none;
+}
+
+@mixin transform_time($total_time) {
+  -webkit-transition: $total_time;
+  -moz-transition: $total_time;
+  -o-transition: $total_time;
+  transition: $total_time;
+}
+
+@mixin media-breakpoint-down($name, $breakpoints: $grid-breakpoints) {
+  $max: breakpoint-max($name, $breakpoints);
+  @if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}

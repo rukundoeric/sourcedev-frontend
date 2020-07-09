@@ -1,0 +1,10 @@
+%banner-bg-gr-1 {
+  background-image: linear-gradient(
+    90deg,
+    $color-primary,
+    rgba($color-primary, 1),
+    rgba($color-primary, 0.9),
+    rgba($color-primary, 0.8),
+    rgba($color-primary, 0.8)
+  );
+}

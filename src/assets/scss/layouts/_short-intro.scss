@@ -1,0 +1,295 @@
+.short-intro {
+  width: 100%;
+  height: 800px;
+  padding: 3em;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  z-index: 0 !important;
+
+  box-sizing: border-box;
+  @each $screen in $all_small_screen {
+    @media #{$screen} {
+      height: 850px;
+      overflow: hidden;
+      padding: 15px;
+    }
+  }
+  @each $screen in $all_medium_screen {
+    @media #{$screen} {
+      height: 500px;
+    }
+  }
+  .row {
+    padding: 0 !important;
+    div {
+      padding: 0px !important;
+      position: relative;
+    }
+  }
+  h3 {
+    font-size: 2em;
+    font-size: 30px;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-family: dosis;
+    font-weight: 100px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    @each $screen in $all_small_screen {
+      @media #{$screen} {
+        width: 100%;
+        margin: 10px 0;
+        font-size: 1.5em;
+      }
+    }
+    @each $screen in $all_medium_screen {
+      @media #{$screen} {
+        font-size: 1.2em;
+        width: 70%;
+      }
+    }
+    span {
+      width: 95%;
+      background-color: $color-accent-1;
+      display: block;
+      height: 5px;
+      margin-top: 20px;
+      @each $screen in $all_small_screen {
+        @media #{$screen} {
+          width: 70%;
+        }
+      }
+      @each $screen in $all_medium_screen {
+        @media #{$screen} {
+          width: 70%;
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      width: 35%;
+      margin-top: 30%;
+      right: 0;
+    }
+  }
+  .sqr {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    border: 2px solid $color-accent-1;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 12%;
+    bottom: 0;
+    z-index: -1;
+    @each $screen in $all_medium_screen {
+      @media #{$screen} {
+        display: none;
+      }
+    }
+    @each $screen in $all_small_screen {
+      @media #{$screen} {
+        position: relative;
+        display: none;
+      }
+    }
+  }
+  .s-intro {
+  }
+  .s-intro-web-mob {
+    border-radius: 0px 20px 0px 0px;
+    background-image: $s-intro-web-mob-bg;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 95%;
+    height: 300px;
+    z-index: 1 !important;
+    // &:hover {
+    //  z-index: 4;
+    // }
+
+    // border-bottom: 1px solid $color-accent-1;
+    // border-left: 1px solid $color-accent-1;
+    @each $screen in $all_small_screen {
+      @media #{$screen} {
+        width: 100%;
+        height: 300px;
+      }
+    }
+    @each $screen in $all_medium_screen {
+      @media #{$screen} {
+        width: 85%;
+        height: 200px;
+      }
+    }
+    .s-intro-web-mob-inner {
+      border-radius: 0px 18px 0px 0px;
+      padding: 20px !important;
+      position: relative;
+      height: 100%;
+      z-index: 9 !important;
+      clip-path: circle(15% at 94% 11.3%);
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        clip-path: circle(75%);
+        opacity: 1;
+        background-color: white;
+        border: 1px solid $color-accent-1;
+      }
+      .d-i-web-icon {
+        margin-left: 30px;
+        margin-bottom: 60px;
+        float: right;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        i {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          color: $ripple-color;
+          cursor: pointer;
+          line-height: 30px;
+          text-align: center;
+          border-radius: 50%;
+          background-color: $color-white;
+          box-shadow: 0px 12px 20px 0px rgba(53, 185, 122, 0.2);
+          animation: ripple 2s linear infinite;
+        }
+      }
+      h3 {
+        margin: 0 !important;
+        font-family: dosis;
+      }
+      p {
+        @media #{$medium_small_screens} {
+          font-size: 12px;
+        }
+      }
+      a {
+        font-size: 15px;
+        margin: 20px 0;
+      }
+    }
+  }
+  .s-intro-api {
+    border-radius: 0px 0px 0px 20px;
+    background-image: $s-intro-api-bg;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    float: right;
+    transition: all .6s ease-in-out;
+    // border-top: 1px solid $color-accent-1;
+    // border-right: 1px solid $color-accent-1;
+    @each $screen in $all_small_screen {
+      @media #{$screen} {
+        width: 100%;
+        height: 300px;
+        margin-top: 5px;
+      }
+    }
+    @each $screen in $all_medium_screen {
+      @media #{$screen} {
+        width: 65%;
+        height: 170px;
+      }
+    }
+    .s-intro-api-inner {
+      border-radius: 0 0 0 18px;
+      padding: 20px !important;
+      position: relative;
+      height: 100%;
+      z-index: 1;
+      clip-path: circle(22% at 5% 87%);
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        clip-path: circle(75%);
+        opacity: 1;
+        background-color: white;
+        border: 1px solid $color-accent-1;
+      }
+      .d-i-api-icon {
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        margin: 0 0 20px 0;
+        i {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          color: $ripple-color;
+          cursor: pointer;
+          line-height: 30px;
+          text-align: center;
+          border-radius: 50%;
+          background-color: $color-white;
+          box-shadow: 0px 12px 20px 0px rgba(53, 185, 122, 0.2);
+          animation: ripple 2s linear infinite;
+        }
+      }
+      h3 {
+        margin: 0 !important;
+        font-family: dosis;
+        position: relative;
+        float: right;
+        text-align: right;
+      }
+      p {
+        position: relative;
+        float: right;
+        text-align: right;
+      }
+      .d-flex{
+        position: relative;
+        float: right;
+        text-align: right;
+      }
+      a {
+        font-size: 15px;
+        margin: 5px 0;
+        position: relative;
+        float: right;
+      }
+    }
+  }
+
+  .s-intro-techs {
+    li {
+      border: 1px solid red;
+      list-style: none;
+      margin: 0 10px 0 0;
+      display: inline-block;
+      a {
+        height: 40px;
+        width: 40px;
+        display: block;
+        float: left;
+        background: rgba(255, 255, 255, 0.1);
+        color: $color-accent-1;
+        border-radius: 50%;
+        border: 1px solid red;
+        position: relative;
+        span {
+          position: absolute;
+          font-size: 20px;
+          top: 50%;
+          border: 1px solid red;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

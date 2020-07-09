@@ -1,0 +1,66 @@
+.select-1 {
+  position: relative;
+  margin-top: 50px;
+  .icon-select {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    line-height: 60px;
+    i {
+      color: #797979;
+    }
+    z-index: 3;
+  }
+  .single-input {
+    padding-left: 45px;
+  }
+}
+
+
+
+.form-select {
+  height: 60px;
+  width: 100%;
+  border: 1px solid $color-accent-1;
+  border-radius: 40px;
+  .nice-select {
+    border: none;
+    border-radius: 0px;
+    height: 60px;
+    font-size: 17px;
+    padding-left: 45px;
+    padding-right: 40px;
+    width: 100%;
+    .list {
+      margin-top: 0;
+      border: none;
+      border-radius: 0px;
+      box-shadow: none;
+      width: 100%;
+      padding: 10px 0 10px 0px;
+      .option {
+        font-weight: 300;
+        @include transition();
+        line-height: 28px;
+        min-height: 28px;
+        font-size: 15px;
+        padding-left: 45px;
+        &.selected {
+          color: $color-primary;
+          background: transparent;
+        }
+        &:hover {
+          color: $color-primary;
+          background: transparent;
+        }
+      }
+    }
+  }
+  .current {
+    margin-right: 50px;
+    font-weight: 300;
+  }
+  .nice-select::after {
+    right: 20px;
+  }
+}

@@ -6,12 +6,36 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "aos": "^2.3.4",
+    "css-loader": "^3.1.0",
+    "file-loader": "^4.1.0",
+    "gsap": "^3.3.4",
+    "imports-loader": "^1.1.0",
+    "jquery": "^3.5.1",
+    "jquery-ui": "^1.12.1",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "sass-loader": "^7.1.0",
+    "scrollmagic": "^2.0.7",
+    "style-loader": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-loader": "^3.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.20.1"
   },
   "scripts": {
     "start": "react-scripts start",
+    "watch:sass": "sass --watch src/assets/scss/main.scss:src/assets/css/style.css",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

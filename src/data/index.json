@@ -1,0 +1,140 @@
+{
+  "general": {
+    "contactBtnTxt": "Talk To Us",
+    "socialMedia":[
+      {
+        "name":"Facebook",
+        "icon":"fab fa-facebook-f"
+      },{
+        "name":"Twitter",
+        "icon":"fab fa-twitter"
+      },
+      {
+        "name":"Instagram",
+        "icon":"fab fa-instagram"
+      }
+    ]
+  },
+  "banner": {
+    "introTxt": "We are",
+    "nameTxt": "SourceDev",
+    "bannertxt": "Solution for Web & Mobile Software Application Development"
+  },
+  "about": {
+    "sectionName": "About Us",
+    "section1": {
+      "title": "Our Mission & goal",
+      "description": "We Have more than 7 years of production experience in software development and our mission is to bring originarity and innovation by designing and develop software applications that fit your brand."
+    },
+    "section2": {
+      "title": "Why Chose Us",
+      "items": [
+        {
+          "icon": "flaticon-coding",
+          "title": "Get quality product",
+          "description": "We have experienced developers to help provide you a quality product according to your wish."
+        },
+        {
+          "icon": "flaticon-coding",
+          "title": "Save time with qualified Developers",
+          "description": "Our Engineers do their best to deliver your product in short time posible."
+        }
+      ]
+    }
+  },
+  "sIntro": {
+    "title": "We are here to help you bring your product to life",
+    "section1": {
+      "title": "Front-End",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, dolor quaerat aliquam numquam veniam nesciunt.",
+      "techList": [
+        {
+          "name": "Reactjs",
+          "icon": "far fa-twitter"
+        },
+        {
+          "name": "Angulajs",
+          "icon": "far fa-twitter"
+        },
+        {
+          "name": "Jquery",
+          "icon": "far fa-twitter"
+        },
+
+        {
+          "name": "HTML5",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "name": "CSS3",
+          "icon": "fa fa-twitter"
+        }
+      ]
+    },
+    "section2": {
+      "title": "Back-End",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. veniam nesciunt.",
+      "techList": [
+        {
+          "name": "Nodejs",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "name": "Ruby on rails",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "name": "Java",
+          "icon": "fa fa-twitter"
+        }
+      ]
+    }
+  },
+  "services": {
+    "sectionName": "Services",
+    "title": "Meet Our Best Services",
+    "subtitle": " We can help you bring your product to life - whether it's a Minimum Viable Product(MVP), UX/UI Services or API integration.",
+    "items": [
+      {
+        "icon": "flaticon-graphic-designer",
+        "iconStyle": "ServiceIcon",
+        "title": "Web Design",
+        "description": "A small river named Duden flows by their place and supplies it with the necessary regelialia."
+      },
+      {
+        "icon": "flaticon-computer",
+        "iconStyle": "ServiceIcon",
+        "title": "Front-End Development",
+        "description": "A small river named Duden flows by their place and supplies it with the necessary regelialia."
+      },
+      {
+        "icon": "flaticon-app-development",
+        "iconStyle": "ServiceIcon",
+        "title": "Mobile Application Develoment",
+        "description": "A small river named Duden flows by their place and supplies it with the necessary regelialia."
+      },
+      {
+        "icon": "flaticon-smartphone",
+        "iconStyle": "ServiceIcon",
+        "title": "API Integration(Back-End)",
+        "description": "A small river named Duden flows by their place and supplies it with the necessary regelialia."
+      }
+    ]
+  },
+  "portifolio": {
+    "sectionName": "Portfolio",
+    "title": "Explore our best practice area"
+  },
+  "testmony": {
+    "sectionName": "Testimonial",
+    "title": "Our Clients Are Saying"
+  },
+  "pricing": {
+    "sectionName": "PRICE & PLANS",
+    "title": "Affordable Packages"
+  },
+  "blog": {
+    "sectionName": "Blog",
+    "title": "Updates From Blog"
+  }
+}

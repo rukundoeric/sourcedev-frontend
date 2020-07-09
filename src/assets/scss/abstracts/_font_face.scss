@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "valken";
+  src: $valken;
+}
+@font-face {
+  font-family: "dosis";
+  src: $dosis;
+}
+@font-face {
+  font-family: "helvetica";
+  src: $helvetica;
+}
+@font-face {
+  font-family: "s-s-regular";
+  src: $s-s-regular;
+}
+@font-face {
+  font-family: "Flaticon";
+  src: $flaticon-src-1;
+  src: $flaticon-src-2;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media #{$min-device-pixel-ratio} {
+  @font-face {
+    font-family: "Flaticon";
+    src: $flaticon-src-3;
+  }
+}
+@font-face {
+    font-family: 'roboto-medium';
+    src: $roboto-medium;
+}

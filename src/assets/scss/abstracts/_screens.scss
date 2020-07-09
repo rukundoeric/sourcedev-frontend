@@ -1,0 +1,33 @@
+$extra_big_screen: "only screen and (min-width: 1200px) and (max-width: 3640px)";
+$big_screen: "only screen and (min-width: 1200px) and (max-width: 1440px)";
+$medium_device: "only screen and (min-width: 992px) and (max-width: 1200px)";
+$tab_device: "only screen and (min-width: 768px) and (max-width: 991px) ";
+$tab_device_h: "only screen and (min-height: 1000px) and (max-height: 3000px)";
+$large_mobile: "only screen and (min-width: 576px) and (max-width: 767px)";
+$small_mobile: "(max-width: 576px)";
+$sm_mobile: "only screen and (min-width: 421px) and (max-width: 575px)";
+$xs_mobile: "(max-width: 420px)";
+
+$min-device-pixel-ratio: "screen and (-webkit-min-device-pixel-ratio: 0)";
+$small_height_screen: "only screen and (min-height: 421px) and (max-height: 575px)";
+
+
+$medium_small_screens: "(max-width: 1200px)";
+
+$all_big_screen: ($extra_big_screen, $big_screen, $medium_device);
+$all_medium_screen: ($medium_device, $tab_device);
+$only_small_screen: ($large_mobile, $small_mobile);
+$all_small_screen: ($large_mobile, $small_mobile, $sm_mobile, $xs_mobile);
+$all_extra-small_screen: ($sm_mobile, $xs_mobile);
+
+$grid-breakpoints: () !default;
+$grid-breakpoints: map-merge(
+  (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+  ),
+  $grid-breakpoints
+);

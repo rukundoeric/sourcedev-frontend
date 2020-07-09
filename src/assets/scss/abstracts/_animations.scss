@@ -1,0 +1,22 @@
+.jump-animimation-1 {
+  @include custom-animate(jumping1, 9s, ease-in-out, 2s, infinite, alternate);
+}
+.jump-animimation-2 {
+  @include custom-animate(jumping2, 9s, ease-in-out, 2s, infinite, alternate);
+}
+.jump-animimation-3 {
+  @include custom-animate(jumping3, 9s, ease-in-out, 2s, infinite, alternate);
+}
+.jump-animimation-4 {
+  @include custom-animate(jumping4, 9s, ease-in-out, 2s, infinite, alternate);
+}
+
+[data-aos="short-intro-web"] {
+  transform: translate3d(300px, 0, 0);
+  opacity: 0;
+  // transition-property: transform, opacity;
+  // &.aos-animate {
+  //   transform: translate3d(0px, 0, 0);
+  //   opacity: 1;
+  // }
+}

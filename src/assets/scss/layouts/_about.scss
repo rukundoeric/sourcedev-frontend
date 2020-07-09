@@ -1,0 +1,166 @@
+/**************** about css start ****************/
+.about-part {
+  padding: 50px 0;
+  position: relative;
+  z-index: -1;
+  .overlay {
+    position: absolute;
+    width: 73%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    border-radius: 0 0 0 30px;
+    background: $color-accent-1-a;
+    z-index: -2;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+     @each $screen in $all_small_screen {
+      @media #{$screen} {
+        border-radius: 0 !important;
+      }
+    }
+  }
+  .text-wrapper {
+    width: 100%;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+      height: inherit;
+    }
+  }
+  .one-half {
+    width: 50%;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      margin-left: 30px;
+    }
+    &.half-text {
+      @include media-breakpoint-up(xl) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 1140px;
+        margin: 0 auto;
+        .text-inner {
+          max-width: 50%;
+        }
+      }
+      .text-inner {
+      }
+    }
+  }
+  .img {
+    height: 600px;
+  }
+
+  @media #{$small_mobile} {
+    padding: 70px 0px 70px;
+    background-position: top;
+    background-size: 100% 43%;
+  }
+  @media #{$large_mobile} {
+    padding: 70px 0px 70px;
+    background-position: top left;
+    background-size: 90% 56%;
+  }
+  @media #{$tab_device} {
+    padding: 70px 0px 70px;
+    background-position: left;
+    background-size: 48% 70%;
+  }
+  @media #{$medium_device} {
+    padding: 0px 0px 80px;
+  }
+
+  .about_text {
+    h4 {
+      margin-bottom: 32px;
+      color: $color-accent-1;
+      font-size: 22px;
+      font-style: italic;
+      font-family: desis;
+      font-weight: 300;
+      @media #{$small_mobile} {
+        margin-bottom: 20px;
+        font-size: 17px;
+      }
+      @media #{$large_mobile} {
+        margin-bottom: 20px;
+        font-size: 17px;
+      }
+      @media #{$tab_device} {
+        margin-bottom: 20px;
+        font-size: 17px;
+      }
+      @media #{$medium_device} {
+        margin-bottom: 20px;
+        font-size: 17px;
+      }
+    }
+    p {
+      color: rgb(102, 102, 102);
+      line-height: 1.8;
+      margin: 20px 0;
+    }
+  }
+  h3 {
+    font-size: 25px;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-family: dosis;
+    font-weight: 400px;
+    @media #{$small_mobile} {
+      margin-bottom: 15px;
+    }
+    @media #{$large_mobile} {
+      margin-bottom: 15px;
+    }
+    @media #{$tab_device} {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+    @media #{$medium_device} {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+  }
+  img {
+    width: 90%;
+    box-shadow: 0px 0px 6px lighten($color_accent_1, 30%);
+    @each $screen in $all_small_screen {
+      @media #{$screen} {
+       display: none;
+      }
+    }
+  }
+  .btn-1 {
+    font-size: 15px;
+    padding: 10px 30px;
+  }
+  .title-2 {
+    margin-bottom: 20px;
+  }
+  .services-wrap {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    .media-body {
+      h4 {
+        font-weight: 600;
+        text-transform: capitalize;
+        font-size: 17px;
+      }
+    }
+    &:hover {
+      .icon {
+        background: $color-accent-1;
+        span {
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
