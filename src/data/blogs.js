@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import img1 from '../assets/imgs/ser-2.jpg';
 import img2 from '../assets/imgs/ser-5.jpg';
 import img3 from '../assets/imgs/ser-4.jpg';

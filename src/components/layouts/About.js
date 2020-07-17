@@ -40,6 +40,7 @@ export default function About() {
                       title={item.title}
                       desc={item.description}
                       icon={item.icon}
+                      animation={item.animation}
                     />
                   ))}
                 </div>

@@ -20,17 +20,17 @@ export default class Sintro extends Component {
 
   componentDidMount() {
     const tl = new TimelineMax();
-    tl.from('#box', 1, { opacity: 0, scale: 0 });
-    tl.from('#d-intro-txt', 1, { x: 200, opacity: 0 });
+    tl.from('#box', 0.5, { opacity: 0, scale: 0 });
+    tl.from('#d-intro-txt', 0.5, { x: 200, opacity: 0 });
     tl.from('#d-intro-txt-under-line', 1, { width: 0 }, '=.5');
-    tl.from('#d-intro-web', 1, { x: -200, opacity: 0 }, '=-1');
-    tl.from('#d-intro-mobile', 1, { x: 200, opacity: 0 }, '=-.7');
+    tl.from('#d-intro-web', 0.5, { x: -200, opacity: 0 }, '=-1');
+    tl.from('#d-intro-mobile', 0.5, { x: 200, opacity: 0 }, '=-.7');
     new scrollMagic.Scene({
       triggerElement: '#short-intro',
-      triggerHook: 'onLeave',
-      duration: '100%',
+      // triggerHook: 'onLeave',
+      // duration: '100%',
     })
-      .setPin('#short-intro')
+      // .setPin('#short-intro')
       .setTween(tl)
       .addTo(this.controller);
   }
@@ -58,8 +58,7 @@ export default class Sintro extends Component {
                     {sIntro.section1.techList.map((item, i) => (
                       <SIcon
                         key={`key_${i}`}
-                        icon={item.icon}
-                        styleClass="icon2"
+                        styleClass={item.icon}
                       />
                     ))}
                   </div>
@@ -79,9 +78,8 @@ export default class Sintro extends Component {
                   <div className="d-flex">
                     {sIntro.section2.techList.map((item, i) => (
                       <SIcon
-                        key={`key_${i}`} 
-                        icon={item.icon}
-                        styleClass="icon2"
+                        key={`key_${i}`}
+                        styleClass={item.icon}
                       />
                     ))}
                   </div>

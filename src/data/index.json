@@ -1,17 +1,20 @@
 {
   "general": {
     "contactBtnTxt": "Talk To Us",
-    "socialMedia":[
+    "socialMedia": [
       {
-        "name":"Facebook",
-        "icon":"fab fa-facebook-f"
-      },{
-        "name":"Twitter",
-        "icon":"fab fa-twitter"
+        "name": "Facebook",
+        "icon": "fab fa-facebook-f",
+        "link": "https://fb.me/sourcedevs "
       },
       {
-        "name":"Instagram",
-        "icon":"fab fa-instagram"
+        "name": "Twitter",
+        "icon": "fab fa-twitter",
+        "link": "https://twitter.com/SourceDev2"
+      },
+      {
+        "name": "Instagram",
+        "icon": "fab fa-instagram"
       }
     ]
   },
@@ -24,20 +27,32 @@
     "sectionName": "About Us",
     "section1": {
       "title": "Our Mission & goal",
-      "description": "We Have more than 7 years of production experience in software development and our mission is to bring originarity and innovation by designing and develop software applications that fit your brand."
+      "description": "We Have more than 7 years of production experience in software development and our mission is to bring originality and innovation by designing and develop software applications that fit your brand."
     },
     "section2": {
       "title": "Why Chose Us",
       "items": [
         {
-          "icon": "flaticon-coding",
+          "icon": "flaticon-quality",
           "title": "Get quality product",
-          "description": "We have experienced developers to help provide you a quality product according to your wish."
+          "description": "We have experienced developers to help provide you a quality product according to your wish.",
+          "animation": {
+            "name": "fade-up",
+            "easing": "ease-in-out",
+            "delay": "300",
+            "duration": "1000"
+          }
         },
         {
-          "icon": "flaticon-coding",
+          "icon": "flaticon-stopwatch",
           "title": "Save time with qualified Developers",
-          "description": "Our Engineers do their best to deliver your product in short time posible."
+          "description": "Our Engineers do their best to deliver your product in short time possible.",
+          "animation": {
+            "name": "fade-up",
+            "easing": "ease-in-out",
+            "delay": "600",
+            "duration": "1000"
+          }
         }
       ]
     }
@@ -46,46 +61,42 @@
     "title": "We are here to help you bring your product to life",
     "section1": {
       "title": "Front-End",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, dolor quaerat aliquam numquam veniam nesciunt.",
+      "description": "We use the front-end development frameworks below to ensure the flexibility and usability of your application.",
       "techList": [
         {
           "name": "Reactjs",
-          "icon": "far fa-twitter"
+          "icon": "cust-reactjs"
         },
         {
           "name": "Angulajs",
-          "icon": "far fa-twitter"
+          "icon": "cust-angular"
         },
         {
-          "name": "Jquery",
-          "icon": "far fa-twitter"
+          "name": "Vue",
+          "icon": "cust-vue"
         },
 
         {
-          "name": "HTML5",
-          "icon": "fa fa-twitter"
-        },
-        {
-          "name": "CSS3",
-          "icon": "fa fa-twitter"
+          "name": "Jquery",
+          "icon": "cust-jquery"
         }
       ]
     },
     "section2": {
       "title": "Back-End",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. veniam nesciunt.",
+      "description": "We Are Here To Solve Your Problems and Deliver Your Needs",
       "techList": [
         {
           "name": "Nodejs",
-          "icon": "fa fa-twitter"
+          "icon": "cust-nodejs"
         },
         {
           "name": "Ruby on rails",
-          "icon": "fa fa-twitter"
+          "icon": "cust-rails"
         },
         {
           "name": "Java",
-          "icon": "fa fa-twitter"
+          "icon": "cust-java"
         }
       ]
     }
@@ -99,25 +110,49 @@
         "icon": "flaticon-graphic-designer",
         "iconStyle": "ServiceIcon",
         "title": "Web Design",
-        "description": "A small river named Duden flows by their place and supplies it with the necessary regelialia."
+        "description": "Design an engaging product that is easy-to-use and attractive",
+        "animation": {
+          "name": "zoom-in-up",
+          "easing": "ease-in-out",
+          "delay": "300",
+          "duration": "1000"
+        }
       },
       {
         "icon": "flaticon-computer",
         "iconStyle": "ServiceIcon",
         "title": "Front-End Development",
-        "description": "A small river named Duden flows by their place and supplies it with the necessary regelialia."
+        "description": "Implement a product that is attractive and functional.",
+        "animation": {
+          "name": "zoom-in-up",
+          "easing": "ease-in-out",
+          "delay": "300",
+          "duration": "1000"
+        }
       },
       {
         "icon": "flaticon-app-development",
         "iconStyle": "ServiceIcon",
-        "title": "Mobile Application Develoment",
-        "description": "A small river named Duden flows by their place and supplies it with the necessary regelialia."
+        "title": "Mobile Application Development",
+        "description": "Design and implement mobile application",
+        "animation": {
+          "name": "zoom-in-up",
+          "easing": "ease-in-out",
+          "delay": "300",
+          "duration": "1000"
+        }
       },
       {
-        "icon": "flaticon-smartphone",
+        "icon": "flaticon-api-1",
         "iconStyle": "ServiceIcon",
-        "title": "API Integration(Back-End)",
-        "description": "A small river named Duden flows by their place and supplies it with the necessary regelialia."
+        "title": "Back-End Development",
+        "description": "Solve your problem and deliver your needs",
+        "animation": {
+          "name": "zoom-in-up",
+          "easing": "ease-in-out",
+          "delay": "300",
+          "duration": "1000"
+        }
       }
     ]
   },

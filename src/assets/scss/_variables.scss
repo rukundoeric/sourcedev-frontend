@@ -6,7 +6,6 @@
 @import "./abstracts/extends";
 @import "./abstracts/animations";
 @import "./commons/icons";
-
 // Background imgs
 $banner-bg-1: url(../imgs/bg/banner-bg-1_80.jpg);
 $banner-bg-2: url(../imgs/bg/banner-bg-2.jpg);
@@ -30,6 +29,18 @@ $about-overlay: url(../imgs/bg/about_overlay.png);
 // Icons
 $d-icon-menu: url(../imgs/icons/menu-open-d.svg);
 $d-icon-close: url(../imgs/icons/menu-close-d.svg);
+
+$react-icon: url(../imgs/icons/react.svg);
+$angula-icon: url(../imgs/icons/angularjs.svg);
+$vue-icon: url(../imgs/icons/vue.svg);
+$jquery-icon: url(../imgs/icons/jquery.svg);
+
+$nodejs-icon:url(../imgs/icons/nodejs.svg);
+$java-icon:url(../imgs/icons/java.svg);
+$ruby-icon:url(../imgs/icons/ruby.svg);
+$rails-icon:url(../imgs/icons/rails1.svg);
+
+
 
 // Fonts
 $valken: url(../fonts/Valken__.ttf);

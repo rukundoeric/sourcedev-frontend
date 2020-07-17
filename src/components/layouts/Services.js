@@ -25,6 +25,7 @@ export default class Services extends Component {
                 iconStyle={item.iconStyle}
                 title={item.title}
                 description={item.description}
+                animation={item.animation}
               />
             ))}
           </div>

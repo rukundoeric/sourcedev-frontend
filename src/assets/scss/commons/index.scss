@@ -17,6 +17,7 @@ textarea {
 a {
   text-decoration: none !important;
   @include transform_time(0.5s);
+  cursor: pointer !important;
 }
 h3,
 h4,
@@ -27,8 +28,6 @@ p {
 
 p {
   font-family: $secondary-font;
-  font-weight: 100;
-  opacity: 0.7;
 }
 ul,
 li {
@@ -68,18 +67,6 @@ ul {
   &:hover::before::after {
     background-color: $color-accent-1;
   }
-  // &:hover::before{
-  //   transform: translateY(6.7px) rotate(135deg);
-  //   background-color: $color-accent-1;
-  // }
-  // &:hover::after{
-  //   transform: translateY(-6.7px) rotate(-135deg);
-  //   background-color: $color-accent-1;
-  // }
-  // &:hover .in-d{
-  //   transform: scale(0);
-  //   background-color: $color-accent-1;
-  // }
 }
 
 .open-menu-btn {
@@ -94,20 +81,8 @@ ul {
   }
 }
 
-// .section {
-//   min-height: 800px !important;
-// }
-// section:nth-of-type(even) {
-//   min-height: 800px !important;
-// }
-
 .open-menu {
   clip-path: circle(150% at 100% 0%) !important;
-  //   @each $var in $all_medium_screen {
-  //   @media #{$var} {
-  //     clip-path: circle(100vh at 100% 0%) !important;
-  //   }
-  // }
 }
 
 .activepage {
@@ -130,15 +105,8 @@ ul {
   }
 }
 
-[class^="flaticon-"]:before,
-[class*=" flaticon-"]:before,
-[class^="flaticon-"]:after,
-[class*=" flaticon-"]:after {
-  font-family: Flaticon;
-  font-size: 35px;
-  font-style: normal;
-  color: #fff;
-}
+// Flaticon Icon
+@include flaticon_icon_m(35px, $color-white);
 
 .d-flex {
   display: -ms-flexbox;
@@ -207,15 +175,47 @@ ul {
   margin-right: 10px;
   background: $color-white;
   @include border-radius(50%);
-  @include transition(0.3s);
   animation: pulse-a 2s infinite;
+  @include flex-center;
   span {
     line-height: 1.3;
-    font-size: 30px;
     @include flex-center;
+    @include transition(0.3s);
+    @include flaticon_icon_m(20px, $color-accent-1);
     i {
-      font-size: 30px;
+      font-size: 25px;
       color: $color-accent-1;
+    }
+  }
+}
+.icon7 {
+  width: 60px;
+  position: fixed;
+  height: 60px;
+  margin: 20px;
+  z-index: 8;
+  bottom: 0;
+  right: 0;
+  display: none !important;
+  background: $color-accent-1;
+  @include border-radius(50%);
+  @each $screen in $all_small_screen {
+    @media #{$screen} {
+      display: block !important;
+      background: $color-accent-1;
+      span {
+        height: 60px;
+        line-height: 1.3;
+        position: relative;
+        @include flex-center;
+        @include transition(0.3s);
+        @include flaticon_icon_m(20px, $color-white);
+
+        i {
+          font-size: 20px;
+          color: $color-white;
+        }
+      }
     }
   }
 }
@@ -223,7 +223,7 @@ ul {
   width: 50px;
   height: 50px;
   margin-right: 10px;
-  background: rgba($color-accent-1, .3);
+  background: rgba($color-accent-1, 0.3);
   @include border-radius(50%);
   @include transition(0.3s);
   span {
@@ -252,10 +252,6 @@ ul {
   }
 }
 
-section {
-  // border: 1px solid red;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -267,13 +263,48 @@ section {
   }
 }
 
-.expand {
-  position: relative;
-  // width: 400px;
-  // transition: width 5s ease-in-out;
-  animation: fadeIn 0.4s 0.4s linear;
-  // .icon {
-  //   transform: rotate(180deg);
-  //   transition: all 1s ease-in;
-  // }
+
+
+.cust-reactjs {
+  background-image: $react-icon;
+  @include fit-background;
+  margin-right: 10px;
+  @include sizing(45px, 40px);
+}
+.cust-angular {
+  background-image: $angula-icon;
+  @include fit-background;
+  margin-right: 10px;
+  @include sizing(40px, 40px);
+}
+.cust-vue {
+  background-image: $vue-icon;
+  @include fit-background;
+  margin-right: 10px;
+  @include sizing(43px, 37px);
+}
+.cust-jquery {
+  background-image: $jquery-icon;
+  @include fit-background;
+  margin-right: 10px;
+  @include sizing(40px, 40px);
+}
+
+.cust-nodejs {
+  background-image: $nodejs-icon;
+  @include fit-background;
+  margin-right: 20px;
+  @include sizing(42px, 46px);
+}
+.cust-java {
+  background-image: $java-icon;
+  @include fit-background;
+  margin-right: 20px;
+  @include sizing(38px, 52px);
+}
+.cust-rails {
+  background-image: $rails-icon;
+  @include fit-background;
+  margin-right: 20px;
+  @include sizing(40px, 45px);
 }

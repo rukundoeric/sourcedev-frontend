@@ -1,0 +1,67 @@
+/*preloader*/
+
+
+#app-load {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: $color-accent-1;
+  -webkit-animation: appload 2400ms linear infinite;
+  animation: appload 2400ms linear infinite;
+  z-index: 999;
+}
+#app-load:before {
+  content: "";
+  position: absolute;
+  top: 7.5px;
+  left: 7.5px;
+  right: 7.5px;
+  bottom: 7.5px;
+  border-radius: 50%;
+  border: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: $color-accent-1;
+  -webkit-animation: appload 2700ms linear infinite;
+  animation: appload 2700ms linear infinite;
+}
+#app-load:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  border: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: $color-accent-1;
+  -webkit-animation: appload 1800ms linear infinite;
+  animation: appload 1800ms linear infinite;
+}
+
+@-webkit-keyframes appload {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes appload {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*End preloader*/

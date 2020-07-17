@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable no-undef */
 /* eslint-disable linebreak-style */
 /* eslint-disable class-methods-use-this */
@@ -7,9 +8,11 @@
 /* eslint-disable react/jsx-filename-extension */
 
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { banner, general } from '../../data/index.json';
+import { hideContactUs, showContactUs } from '../../redux/action/ui.action';
 
-export default class Banner extends Component {
+class Banner extends Component {
   componentDidMount() {
     window.$(window).scroll(() => {
       const windowTop = window.$(window).scrollTop() + 1;
@@ -50,7 +53,14 @@ export default class Banner extends Component {
                   </h3>
                   <h1 className="mb-4 expand">{banner.bannertxt}</h1>
                   <p>
-                    <a href="#" className="btn-1 py-3 px-4">
+                    <a
+                      href="#"
+                      className="btn-1 py-3 px-4"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        this.props.showContactUs();
+                      }}
+                    >
                       {general.contactBtnTxt}
                     </a>
                   </p>
@@ -70,3 +80,8 @@ export default class Banner extends Component {
     );
   }
 }
+
+export default connect(null, {
+  hideContactUs,
+  showContactUs,
+})(Banner);
