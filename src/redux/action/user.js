@@ -1,14 +1,19 @@
+/* eslint-disable no-undef */
 /* eslint-disable import/prefer-default-export */
 import axios from 'axios';
+import dotenv from 'dotenv';
 import { CONTACT_US_SMS } from './types';
 
-const api1 = 'https://sourcedevbackend.herokuapp.com';
-const api2 = 'http://localhost:7880';
-const g = false;
-const api = g ? api1 : api2;
+const { REACT_APP_API_URL_1 } = process.env;
+
+dotenv.config();
+
 export const contactUs = m => async (dispatch) => {
   try {
-    const { data } = await axios.post(`${api}/notification/new`, m);
+    const { data } = await axios.post(
+      `${REACT_APP_API_URL_1}/notification/new`,
+      m,
+    );
     dispatch({
       type: CONTACT_US_SMS,
       payload: data,
