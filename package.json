@@ -13,7 +13,7 @@
     "gsap": "^3.3.4",
     "imports-loader": "^1.1.0",
     "jquery": "^3.5.1",
-    "jquery-ui": "^1.12.1",
+    "jquery-ui": "^1.13.0",
     "node-sass": "^4.14.1",
     "postcss-loader": "^3.0.0",
     "react": "^16.13.1",
